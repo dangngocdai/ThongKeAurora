@@ -7,7 +7,8 @@ namespace XuatHoaDonAurora
     public class GoogleSheetsManager
     {
         static string credentialsPath = Path.GetFullPath(@"C:\Datas\crendentials.json"); // Đường dẫn tới file JSON tải về
-        static string spreadsheetId = "1qolBrFZsvfZWk54nozo7_Hlz56GCL9yuT8YAx1_WNkU"; // ID của Google Sheet (lấy từ URL)
+        //static string spreadsheetId = "1qolBrFZsvfZWk54nozo7_Hlz56GCL9yuT8YAx1_WNkU"; // ID của Google Sheet (lấy từ URL)
+        static string spreadsheetId = "1si87_KViUedIlwLhPtp6WECL0MBsLfpeQAjy-sexc4Q"; // ID của Google Sheet (lấy từ URL)
         public static void AddHoaDonInSheets(string maHD, string date, string time, string finalMoney,string jsonData)
         {
             try

@@ -41,7 +41,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "XuatHoaDonAurora.HoaDon.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(9, 0);
+            this.reportViewer1.Location = new System.Drawing.Point(9, -9);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;

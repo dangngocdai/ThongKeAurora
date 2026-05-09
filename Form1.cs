@@ -13,6 +13,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace XuatHoaDonAurora
 {
@@ -588,6 +589,11 @@ namespace XuatHoaDonAurora
                 txtPhanTram.Clear();
             }
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CreateVoucher form = new CreateVoucher(new Discount(txtTenMa.Text, txtPhanTram.Text=="" ? 0 : decimal.Parse(txtPhanTram.Text), checkPhanTram.Checked));
+            form.ShowDialog();
+        }
         #endregion
 
 
@@ -743,5 +749,7 @@ namespace XuatHoaDonAurora
             }
             DisplayBtnBank();
         }
+
+        
     }
 }

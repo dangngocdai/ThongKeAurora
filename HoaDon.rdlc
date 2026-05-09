@@ -1188,7 +1188,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>Đường Hồ Tùng Mậu - Phường Cầu Diễn - Quận Nam Từ Liêm Hà Nội</Value>
+                        <Value>Đường Hồ Tùng Mậu - Phường Từ Liêm - Hà Nội</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -1200,7 +1200,7 @@
                 <rd:DefaultName>Textbox33</rd:DefaultName>
                 <Top>9.63025cm</Top>
                 <Left>0cm</Left>
-                <Height>1.73651cm</Height>
+                <Height>1.28672cm</Height>
                 <Width>4.6959cm</Width>
                 <ZIndex>11</ZIndex>
                 <Style>
@@ -1233,8 +1233,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox34</rd:DefaultName>
-                <Top>11.21951cm</Top>
-                <Left>0cm</Left>
+                <Top>11.09336cm</Top>
+                <Left>0.00472cm</Left>
                 <Height>0.53837cm</Height>
                 <Width>4.6959cm</Width>
                 <ZIndex>12</ZIndex>
