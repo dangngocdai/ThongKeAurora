@@ -66,10 +66,14 @@ namespace XuatHoaDonAurora
                 case TypeBank.TPBank_NguyenNgocTrien:
                     parameters[6] = new ReportParameter("IdBank", "88830101998");
                     parameters[7] = new ReportParameter("UserBank", "NGUYEN NGOC TRIEN");
+                    txt_IdBank.Text = "88830101998";
+                    txt_UserBank.Text = "NGUYEN NGOC TRIEN";
                     break;
                 case TypeBank.VPBank_DangNgocVien:
                     parameters[6] = new ReportParameter("IdBank", "0985909968");
                     parameters[7] = new ReportParameter("UserBank", "DANG NGOC VIEN");
+                    txt_IdBank.Text = "0985909968";
+                    txt_UserBank.Text = "DANG NGOC VIEN";
                     break;
             }
 
@@ -96,12 +100,12 @@ namespace XuatHoaDonAurora
         private void button1_Click(object sender, EventArgs e)
         {
 
-            reportViewer1.PrintDialog();
-
-            GoogleSheetsManager.AddHoaDonInSheets(maHD,todayDate, time, finalMoney, Newtonsoft.Json.JsonConvert.SerializeObject(dataAuroraSave, Newtonsoft.Json.Formatting.None));
-
-            AddIndexHD();
-            this.Close();
+            if(reportViewer1.PrintDialog() == DialogResult.OK)
+            {
+                GoogleSheetsManager.AddHoaDonInSheets(maHD, todayDate, time, finalMoney, Newtonsoft.Json.JsonConvert.SerializeObject(dataAuroraSave, Newtonsoft.Json.Formatting.None));
+                AddIndexHD();
+                this.Close();
+            }
         }
 
         private void Deserialize()

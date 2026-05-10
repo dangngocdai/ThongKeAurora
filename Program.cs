@@ -16,7 +16,8 @@ namespace XuatHoaDonAurora
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CreateVoucher(new Discount("",1)));
+            //Application.Run(new CreateVoucher(new Discount("",1)));
+            Application.Run(new Form1());
         }
     }
 }

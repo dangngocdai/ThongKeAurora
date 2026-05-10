@@ -591,7 +591,7 @@ namespace XuatHoaDonAurora
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            CreateVoucher form = new CreateVoucher(new Discount(txtTenMa.Text, txtPhanTram.Text=="" ? 0 : decimal.Parse(txtPhanTram.Text), checkPhanTram.Checked));
+            CreateVoucher form = new CreateVoucher(new Discount(txtTenMa.Text, txtPhanTram.Text=="" ? 0 : decimal.Parse(txtPhanTram.Text), checkPhanTram.Checked), discountList);
             form.ShowDialog();
         }
         #endregion

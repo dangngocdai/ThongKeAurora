@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.picQRCode = new System.Windows.Forms.PictureBox();
+            this.txt_IdBank = new System.Windows.Forms.Label();
+            this.txt_UserBank = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picQRCode)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,21 +87,44 @@
             // 
             // picQRCode
             // 
-            this.picQRCode.Location = new System.Drawing.Point(295, 43);
+            this.picQRCode.Location = new System.Drawing.Point(327, 43);
             this.picQRCode.Name = "picQRCode";
-            this.picQRCode.Size = new System.Drawing.Size(390, 371);
+            this.picQRCode.Size = new System.Drawing.Size(311, 281);
             this.picQRCode.TabIndex = 3;
             this.picQRCode.TabStop = false;
+            // 
+            // txt_IdBank
+            // 
+            this.txt_IdBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_IdBank.Location = new System.Drawing.Point(295, 327);
+            this.txt_IdBank.Name = "txt_IdBank";
+            this.txt_IdBank.Size = new System.Drawing.Size(392, 25);
+            this.txt_IdBank.TabIndex = 4;
+            this.txt_IdBank.Text = "465435465435232543";
+            this.txt_IdBank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_UserBank
+            // 
+            this.txt_UserBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_UserBank.Location = new System.Drawing.Point(295, 352);
+            this.txt_UserBank.Name = "txt_UserBank";
+            this.txt_UserBank.Size = new System.Drawing.Size(392, 29);
+            this.txt_UserBank.TabIndex = 5;
+            this.txt_UserBank.Text = "465435465435232543";
+            this.txt_UserBank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 602);
+            this.Controls.Add(this.txt_UserBank);
+            this.Controls.Add(this.txt_IdBank);
             this.Controls.Add(this.picQRCode);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.reportViewer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Report Demo";
@@ -114,5 +140,7 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picQRCode;
+        private System.Windows.Forms.Label txt_IdBank;
+        private System.Windows.Forms.Label txt_UserBank;
     }
 }
