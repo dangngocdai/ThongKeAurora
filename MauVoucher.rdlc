@@ -356,11 +356,23 @@
               </Border>
             </Style>
           </Textbox>
+          <Line Name="Line5">
+            <Top>0.00394in</Top>
+            <Left>6.27021in</Left>
+            <Height>1.88507in</Height>
+            <Width>0in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
         <Height>5.38412in</Height>
         <Style />
       </Body>
-      <Width>6.00917in</Width>
+      <Width>6.85292in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

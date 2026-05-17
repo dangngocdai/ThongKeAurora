@@ -7,9 +7,9 @@ namespace XuatHoaDonAurora
     public class GoogleSheetsManager
     {
         static string credentialsPath = Path.GetFullPath(@"C:\Datas\crendentials.json"); // Đường dẫn tới file JSON tải về
-        //static string spreadsheetId = "1qolBrFZsvfZWk54nozo7_Hlz56GCL9yuT8YAx1_WNkU"; // ID của Google Sheet (lấy từ URL)
-        static string spreadsheetId = "1si87_KViUedIlwLhPtp6WECL0MBsLfpeQAjy-sexc4Q"; // ID của Google Sheet (lấy từ URL)
-        public static void AddHoaDonInSheets(string maHD, string date, string time, string finalMoney,string jsonData)
+        static string spreadsheetId = "1qolBrFZsvfZWk54nozo7_Hlz56GCL9yuT8YAx1_WNkU"; // ID của Google Sheet (lấy từ URL)
+        //static string spreadsheetId = "1si87_KViUedIlwLhPtp6WECL0MBsLfpeQAjy-sexc4Q"; // ID của Google Sheet (lấy từ URL)
+        public static void AddHoaDonInSheets(string maHD, string date, string time, string finalMoney, TypeBank typeBank, string jsonData)
         {
             try
             {
@@ -24,7 +24,8 @@ namespace XuatHoaDonAurora
                 {
                     Console.WriteLine($"Sheet '{nameSheet}' đã tồn tại.");
                 }
-                var newRow = new List<object> { maHD, date, time, finalMoney, jsonData };
+
+                var newRow = new List<object> { maHD, date, time, typeBank.ToString().Split('_')[0], finalMoney, jsonData };
                 sheetsHelper.InsertRowAtTop(nameSheet, newRow);
             }
             catch

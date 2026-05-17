@@ -102,7 +102,7 @@ namespace XuatHoaDonAurora
 
             if(reportViewer1.PrintDialog() == DialogResult.OK)
             {
-                GoogleSheetsManager.AddHoaDonInSheets(maHD, todayDate, time, finalMoney, Newtonsoft.Json.JsonConvert.SerializeObject(dataAuroraSave, Newtonsoft.Json.Formatting.None));
+                GoogleSheetsManager.AddHoaDonInSheets(maHD, todayDate, time, finalMoney, dataAuroraSave.BankType, Newtonsoft.Json.JsonConvert.SerializeObject(dataAuroraSave, Newtonsoft.Json.Formatting.None));
                 AddIndexHD();
                 this.Close();
             }
